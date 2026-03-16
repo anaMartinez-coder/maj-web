@@ -267,3 +267,80 @@ body {
   right: 20px;
   bottom: 20px;
 }
+
+.tech-section {
+  background: linear-gradient(rgba(15,24,41,0.9), rgba(15,24,41,0.9)), url("img/accion.jpg") center/cover no-repeat;
+  padding: 50px 40px;
+  color: white;
+}
+
+.tech-content {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.tech-text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.tech-text ul {
+  padding-left: 18px;
+  margin-bottom: 20px;
+}
+
+.tech-text li {
+  margin-bottom: 8px;
+}
+
+.bottom-section {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr;
+  background: #ece7df;
+}
+
+.why-us {
+  padding: 40px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+}
+
+.why-card {
+  background: white;
+  padding: 18px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.contact-box {
+  background: #2f394c;
+  padding: 40px;
+  color: white;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.full-btn {
+  width: 100%;
+}
