@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAJ Asesoria Juridica PRUEBA 123</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">MAJ</div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios Jurídicos</a>
+      <a href="#gis">Tecnología GIS</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a href="#contacto" class="btn">Consulta Legal</a>
+  </header>
+
+  <section class="hero" id="inicio">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>MAJ Asesoría Jurídica</h1>
+      <p>Especialistas en análisis jurídico geoespacial, vivienda, deudas y protección de derechos.</p>
+      <a href="#contacto" class="btn">Consulta Legal</a>
+    </div>
+  </section>
+
+  <section class="services" id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="cards">
+
+      <div class="card">
+        <img src="img/tutela.png" alt="tutela">
+        <h3>Acción de Tutela</h3>
+        <p>Protección inmediata de derechos fundamentales.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/peticion.jpg" alt="Derechos de petición">
+        <h3>Derechos de Petición</h3>
+        <p>Asesoría y elaboración de solicitudes formales.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/accion.jpg" alt="Derecho laboral">
+        <h3>Derecho Laboral</h3>
+        <p>Conflictos laborales, despidos y reclamaciones.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/familia.jpg" alt="Derecho de familia">
+        <h3>Derecho de Familia</h3>
+        <p>Apoyo en custodia, alimentos y asuntos familiares.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/vivienda.jpg" alt="Vivienda VIS">
+        <h3>Asesoría en Vivienda VIS y Subsidios</h3>
+        <p>Acompañamiento en subsidios, compra de vivienda y requisitos.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/deudas.jpg" alt="Negociación de deudas">
+        <h3>Negociación de Deudas</h3>
+        <p>Acuerdos de pago, negociación con entidades y alivio financiero.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/datacredito.jpg" alt="Central de riesgos">
+        <h3>Revisión en la Central de Riesgos</h3>
+        <p>Orientación jurídica sobre reportes financieros y Datacrédito.</p>
+      </div>
+
+      <div class="card">
+        <img src="img/justicia.png" alt="Mejora de vida financiera">
+        <h3>Mejora de Vida Financiera</h3>
+        <p>Asesoría legal preventiva para ordenar obligaciones y proteger tu estabilidad económica.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="gis" id="gis">
+    <div class="gis-text">
+      <h2>Tecnología GIS para Casos Legales</h2>
+      <ul>
+        <li>Mapeo ArcGIS y análisis territorial</li>
+        <li>Reconstrucción de accidentes en 3D</li>
+        <li>Resolución de conflictos de predios</li>
+        <li>Evidencia georreferenciada para procesos</li>
+      </ul>
+    </div>
+    <div class="gis-image">
+      <img src="img/gis.jpg" alt="Tecnología GIS">
+    </div>
+  </section>
+
+  <section class="why">
+    <h2>¿Por qué elegirnos?</h2>
+    <div class="why-grid">
+      <div>
+        <h3>Experiencia Jurídica</h3>
+        <p>Atención responsable y estratégica.</p>
+      </div>
+      <div>
+        <h3>Tecnología e Innovación</h3>
+        <p>Uso de herramientas tecnológicas aplicadas al derecho.</p>
+      </div>
+      <div>
+        <h3>Asesoría Personalizada</h3>
+        <p>Cada caso se estudia de forma individual.</p>
+      </div>
+      <div>
+        <h3>Confidencialidad</h3>
+        <p>Manejo ético y reservado de la información.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contacto">
+    <div class="contact-info">
+      <h2>Contáctanos hoy</h2>
+      <p>Obtén asesoría jurídica profesional.</p>
+    </div>
+
+    <form action="https://formsubmit.co/marusub6@gmail.com" method="POST" class="contact-form">
+       <input type="text" name="nombre" placeholder="Nombre completo" required>
+       <input type="text" name="telefono" placeholder="Teléfono" required>
+       <input type="email" name="email" placeholder="Correo electrónico" required>
+       <textarea name="mensaje" placeholder="Cuéntanos tu caso" required></textarea>
+
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="Nueva consulta desde MAJ Asesoría Jurídica">
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/gracias.html">
+        <button type="submit" class="btn">Enviar consulta</button>
+    </form>
+  </section>
+
+  <a class="whatsapp" href="https://wa.me/573102567625" target="_blank">WhatsApp</a>
+
+  <footer class="footer">
+    <p>© 2026 MAJ Asesoría Jurídica. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
