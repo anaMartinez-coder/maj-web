@@ -344,3 +344,35 @@ body {
 .full-btn {
   width: 100%;
 }
+
+.tech-section{
+padding:80px 40px;
+}
+
+.bottom-section{
+padding:60px 40px;
+}
+
+.why-grid{
+margin-top:25px;
+}
+
+.contact-box{
+padding:40px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:12px;
+font-size:15px;
+}
+
+.contact-form button{
+margin-top:10px;
+}
+.tech-content,
+.bottom-section,
+.services-grid{
+max-width:1200px;
+margin:auto;
+}
