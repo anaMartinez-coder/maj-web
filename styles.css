@@ -389,3 +389,26 @@ margin-top:10px;
 max-width:1200px;
 margin:auto;
 }
+
+.footer {
+  background: #111827;
+  color: white;
+  padding: 18px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.95rem;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+
+.footer-right {
+  text-align: right;
+}
