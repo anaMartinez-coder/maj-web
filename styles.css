@@ -384,7 +384,7 @@ font-size:15px;
 margin-top:10px;
 }
 .tech-content,
-.bottom-section,
+.foobottom-section,
 .services-grid{
 max-width:1200px;
 margin:auto;
@@ -393,13 +393,18 @@ margin:auto;
 .footer {
   background: #111827;
   color: white;
-  padding: 18px 30px;
+  padding: 18px 25px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-end;
-  flex-wrap: wrap;
-  gap: 10px;
   font-size: 0.95rem;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
 }
 
 .footer-left {
