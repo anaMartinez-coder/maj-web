@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  background: #f4f1eb;
+  color: #1f1f1f;
+  line-height: 1.6;
+}
+
+.header {
+  background: #0e2340;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-size: 18px;
+}
+
+.btn {
+  background: #b58a3d;
+  color: white;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.hero {
+  position: relative;
+  min-height: 85vh;
+  background: url('img/hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 60px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(7, 16, 29, 0.45);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 700px;
+  color: white;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.services {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.services h2,
+.gis h2,
+.why h2,
+.contact h2 {
+  font-size: 42px;
+  margin-bottom: 30px;
+  color: #14253f;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 28px;
+  padding: 14px 16px 4px;
+  color: #12233d;
+}
+
+.card p {
+  padding: 0 16px 18px;
+  font-size: 17px;
+}
+
+.gis {
+  background: #102542;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 60px 40px;
+  align-items: center;
+}
+
+.gis h2 {
+  color: white;
+}
+
+.gis ul {
+  padding-left: 20px;
+  font-size: 22px;
+}
+
+.gis li {
+  margin-bottom: 12px;
+}
+
+.gis-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.why {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.why-grid div {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.contact {
+  background: linear-gradient(to right, #182d4d, #10213a);
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 60px 40px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.footer {
+  background: #0c1830;
+  color: white;
+  text-align: center;
+  padding: 18px;
+}
+
+.whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #25D366;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 22px;
+  }
+
+  .gis,
+  .contact {
+    grid-template-columns: 1fr;
+  }
+}
