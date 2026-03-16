@@ -1,1 +1,1 @@
-console.log("Página MAJ cargada correctamente");
+console.log("MAJ Asesoría Jurídica cargada correctamente");
