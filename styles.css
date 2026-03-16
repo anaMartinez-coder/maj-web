@@ -412,3 +412,37 @@ margin:auto;
 .footer-right {
   text-align: right;
 }
+.about-lawyer{
+  background:#ece7df;
+  padding:50px 20px;
+}
+
+.about-card{
+  max-width:900px;
+  margin:auto;
+  background:white;
+  border-radius:12px;
+  box-shadow:0 8px 18px rgba(0,0,0,0.15);
+  display:flex;
+  gap:30px;
+  padding:25px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.about-photo img{
+  width:200px;
+  border-radius:10px;
+}
+
+.about-text{
+  flex:1;
+}
+
+.about-text h2{
+  color:#1e2f4a;
+}
+
+.about-text h3{
+  color:#c49a4a;
+}
