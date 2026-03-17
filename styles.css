@@ -633,6 +633,15 @@ html {
 /* ===== CELULAR ===== */
 @media (max-width: 768px) {
 
+  .topbar {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 16px;
+  text-align: center;
+}
+
   .brand-main {
     font-size: 1.6rem;
   }
@@ -653,8 +662,8 @@ html {
   }
 
   .hero {
-    padding: 90px 20px 40px;
-  }
+  padding: 60px 20px 40px;
+}
 
   .hero-content h1 {
     font-size: 1.8rem;
