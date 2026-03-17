@@ -401,12 +401,15 @@ margin:auto;
     min-height: 220px;
 }
 
-.footer-left {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    text-align: left;
-    margin-top: 250px;
+.footer {
+  background: #111827;
+  color: white;
+  padding: 18px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 0.95rem;
+  min-height: 220px;
 }
 
 .footer-left {
@@ -415,6 +418,7 @@ margin:auto;
   gap: 6px;
   text-align: left;
   justify-content: flex-end;
+  height: 100%;
 }
 
 .footer-right {
@@ -454,13 +458,4 @@ margin:auto;
 
 .about-text h3{
   color:#c49a4a;
-}
-
-.footer-left {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    text-align: left;
-    justify-content: flex-end;
-    padding-top: 80px;
 }
