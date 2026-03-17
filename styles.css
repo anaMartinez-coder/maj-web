@@ -410,6 +410,7 @@ margin:auto;
   align-items: flex-end;
   font-size: 0.95rem;
   min-height: 220px;
+  height: 260px;
 }
 
 .footer-left {
