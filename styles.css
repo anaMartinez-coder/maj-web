@@ -401,6 +401,14 @@ margin:auto;
 }
 
 .footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: left;
+    margin-top: 120px;
+}
+
+.footer-left {
   display: flex;
   flex-direction: column;
   gap: 6px;
