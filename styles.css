@@ -407,13 +407,6 @@ margin:auto;
   text-align: left;
 }
 
-.footer-left {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  text-align: left;
-}
-
 .footer-right {
   text-align: right;
 }
