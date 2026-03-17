@@ -16,16 +16,17 @@ body {
 
 /* HEADER */
 .topbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 18px 28px;
+  background: rgba(8, 26, 58, 0.95);
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 20;
-  color: white;
+  padding: 14px 28px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .brand {
@@ -565,14 +566,7 @@ html {
 
 /* ===== TABLET ===== */
 @media (max-width: 992px) {
-  .topbar,
-  .hero,
-  .tech-content,
-  .bottom-section,
-  .about-card,
-  .footer-container {
-    width: 100%;
-  }
+
 
   .menu {
     gap: 10px;
@@ -638,13 +632,6 @@ html {
 
 /* ===== CELULAR ===== */
 @media (max-width: 768px) {
-  .topbar {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    padding: 15px 20px;
-    text-align: center;
-  }
 
   .brand-main {
     font-size: 1.6rem;
@@ -828,15 +815,6 @@ img {
 /* CELULAR */
 @media (max-width: 768px) {
   /* HEADER */
-  .topbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 16px 14px;
-    text-align: center;
-  }
 
   .brand {
     display: flex;
@@ -1115,4 +1093,25 @@ img {
     font-size: 0.9rem;
     padding: 9px 12px;
   }
+}
+
+/* ===== CELULAR ===== */
+@media (max-width: 768px) {
+
+  .topbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 14px 16px;
+    text-align: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .hero {
+    padding-top: 220px;
+  }
+
 }
