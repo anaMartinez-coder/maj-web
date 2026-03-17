@@ -542,3 +542,258 @@ margin-bottom:15px;
 margin-bottom:10px;
 line-height:1.7;
 }
+
+/* ===== RESPONSIVE GENERAL ===== */
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 992px) {
+  .topbar,
+  .hero,
+  .tech-content,
+  .bottom-section,
+  .about-card,
+  .footer-container {
+    width: 100%;
+  }
+
+  .menu {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 100px 25px 50px;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tech-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-photo img {
+    margin: 0 auto;
+  }
+
+  .bottom-section {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 40px 20px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-box {
+    width: 100%;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+/* ===== CELULAR ===== */
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 20px;
+    text-align: center;
+  }
+
+  .brand-main {
+    font-size: 1.6rem;
+  }
+
+  .brand-sub {
+    font-size: 0.8rem;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .header-btn {
+    width: 100%;
+    max-width: 220px;
+    text-align: center;
+  }
+
+  .hero {
+    padding: 90px 20px 40px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .services-section {
+    padding: 30px 15px;
+  }
+
+  .services-section h2,
+  .tech-text h2,
+  .why-us h2,
+  .about-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wide-card {
+    grid-column: span 1;
+  }
+
+  .service-card-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card-inner img {
+    height: 180px;
+  }
+
+  .tech-section {
+    padding: 40px 20px;
+  }
+
+  .about-lawyer {
+    padding: 40px 15px;
+  }
+
+  .about-card {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .about-photo img {
+    width: 160px;
+  }
+
+  .why-us {
+    padding: 20px 10px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-card {
+    padding: 15px;
+  }
+
+  .contact-box {
+    padding: 25px 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .full-btn {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .footer-col {
+    text-align: center;
+  }
+
+  .whatsapp {
+    right: 12px;
+    bottom: 12px;
+    padding: 10px 14px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ===== CELULARES PEQUEÑOS ===== */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .hero-content p,
+  .service-info p,
+  .service-text p,
+  .footer-col p {
+    font-size: 0.9rem;
+  }
+
+  .gold-btn,
+  .mini-btn,
+  .header-btn {
+    font-size: 0.85rem;
+    padding: 10px 14px;
+  }
+
+  .about-photo img {
+    width: 140px;
+  }
+}
