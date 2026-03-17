@@ -797,3 +797,322 @@ html {
     width: 140px;
   }
 }
+
+/* ===== AJUSTES RESPONSIVE REALES ===== */
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bottom-section,
+  .tech-content,
+  .about-card,
+  .footer-container {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+}
+
+/* CELULAR */
+@media (max-width: 768px) {
+  /* HEADER */
+  .topbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px 14px;
+    text-align: center;
+  }
+
+  .brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .brand-main {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  .brand-sub {
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .menu a {
+    font-size: 1rem;
+  }
+
+  .header-btn {
+    width: 90%;
+    max-width: 240px;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  /* HERO */
+  .hero {
+    min-height: auto;
+    padding: 140px 20px 60px;
+    background-position: center;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+    line-height: 1.15;
+    margin-bottom: 12px;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .gold-btn {
+    display: inline-block;
+    width: auto;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  /* SERVICIOS */
+  .services-section {
+    padding: 35px 15px;
+  }
+
+  .services-section h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .service-card,
+  .why-card,
+  .about-card,
+  .contact-box {
+    border-radius: 12px;
+  }
+
+  .service-card img,
+  .service-card-inner img {
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .wide-card {
+    grid-column: span 1;
+  }
+
+  .service-card-inner {
+    display: block;
+  }
+
+  /* TECNOLOGÍA */
+  .tech-section {
+    padding: 40px 20px;
+  }
+
+  .tech-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .tech-text h2 {
+    font-size: 2rem;
+    line-height: 1.15;
+  }
+
+  .tech-text ul {
+    padding-left: 20px;
+  }
+
+  /* SOBRE LA ABOGADA */
+  .about-lawyer {
+    padding: 40px 15px;
+  }
+
+  .about-card {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+    padding: 22px 18px;
+  }
+
+  .about-photo img {
+    width: 140px;
+    margin: 0 auto;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .about-text h3 {
+    font-size: 1.5rem;
+  }
+
+  /* WHY + CONTACTO */
+  .bottom-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 40px 15px;
+  }
+
+  .why-us {
+    padding: 0;
+  }
+
+  .why-us h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .why-card {
+    padding: 18px;
+  }
+
+  .contact-box {
+    padding: 28px 16px;
+  }
+
+  .contact-box h2 {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .full-btn {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 40px 20px;
+    background: #081a3a;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+    text-align: center;
+  }
+
+  .footer-col {
+    text-align: center;
+  }
+
+  .footer-col h3,
+  .footer-col h4 {
+    margin-bottom: 12px;
+  }
+
+  .footer-col p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: white;
+  }
+
+  /* WHATSAPP */
+  .whatsapp {
+    right: 12px;
+    bottom: 12px;
+    padding: 10px 14px;
+    font-size: 0.95rem;
+    z-index: 999;
+  }
+}
+
+/* CELULAR PEQUEÑO */
+@media (max-width: 480px) {
+  .hero {
+    padding: 150px 16px 50px;
+  }
+
+  .brand-main {
+    font-size: 1.8rem;
+  }
+
+  .brand-sub {
+    font-size: 0.9rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.7rem;
+  }
+
+  .services-section h2,
+  .tech-text h2,
+  .about-text h2,
+  .why-us h2,
+  .contact-box h2 {
+    font-size: 1.8rem;
+  }
+
+  .service-card img,
+  .service-card-inner img {
+    height: 190px;
+  }
+
+  .about-photo img {
+    width: 120px;
+  }
+
+  .whatsapp {
+    font-size: 0.9rem;
+    padding: 9px 12px;
+  }
+}
