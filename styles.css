@@ -455,3 +455,12 @@ margin:auto;
 .about-text h3{
   color:#c49a4a;
 }
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: left;
+    justify-content: flex-end;
+    padding-top: 80px;
+}
