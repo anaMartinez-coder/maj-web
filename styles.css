@@ -745,17 +745,35 @@ html {
   }
 
   .footer {
-    padding: 40px 20px;
-  }
+  background: #081a3a;
+  padding: 40px 20px;
+}
 
   .footer-container {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  text-align: center;
+  background: #081a3a;
+}
 
   .footer-col {
-    text-align: center;
-  }
+  text-align: center;
+  background: #081a3a;
+}
+
+.footer-col h3,
+.footer-col h4 {
+  color: white;
+  margin-bottom: 12px;
+}
+
+.footer-col p {
+  color: white;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
 
   .whatsapp {
     right: 12px;
