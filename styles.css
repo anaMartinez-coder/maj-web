@@ -393,11 +393,12 @@ margin:auto;
 .footer {
   background: #111827;
   color: white;
-  padding: 18px 25px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  font-size: 0.95rem;
+    padding: 18px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 0.95rem;
+    min-height: 220px;
 }
 
 .footer-left {
@@ -405,7 +406,7 @@ margin:auto;
     flex-direction: column;
     gap: 6px;
     text-align: left;
-    margin-top: 120px;
+    margin-top: 250px;
 }
 
 .footer-left {
@@ -413,10 +414,12 @@ margin:auto;
   flex-direction: column;
   gap: 6px;
   text-align: left;
+  justify-content: flex-end;
 }
 
 .footer-right {
-  text-align: right;
+    display: flex;
+    align-items: flex-end;
 }
 .about-lawyer{
   background:#ece7df;
