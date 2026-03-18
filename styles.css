@@ -1231,8 +1231,13 @@ img {
 }
 
 @media (max-width: 768px) {
-.joinchat__chatbox {
-width: 280px !important;
-max-width: 90vw !important;
-}
+  .joinchat__chatbox {
+    width: 280px !important;
+    max-width: 90vw !important;
+  }
+
+  #wh-widget-send-button {
+    bottom: 15px !important;
+    right: 15px !important;
+  }
 }
