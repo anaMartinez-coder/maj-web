@@ -1229,3 +1229,10 @@ img {
     max-width: 90vw !important;
   }
 }
+
+@media (max-width: 768px) {
+.joinchat__chatbox {
+width: 280px !important;
+max-width: 90vw !important;
+}
+}
