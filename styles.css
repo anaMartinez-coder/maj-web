@@ -1210,3 +1210,9 @@ img {
     font-size: 22px;
   }
 }
+
+@media (max-width: 768px) {
+  .wa-bubble {
+    display: none;
+  }
+}
