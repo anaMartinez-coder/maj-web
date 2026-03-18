@@ -1253,3 +1253,9 @@ img {
     right: 12px !important;
   }
 }
+
+.joinchat:hover .joinchat__chatbox {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(0) !important;
+}
