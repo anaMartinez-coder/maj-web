@@ -9,27 +9,6 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 
-  <script>
-window.WHWidgetOptions = {
-  whatsapp: "573102567625",
-  call_to_action: "Hola 👋 ¿En qué podemos ayudarte?",
-  position: "right",
-  button_color: "#25D366",
-  pre_filled_message: "Hola, vi tu página de MAJ Asesoría Jurídica y quisiera recibir orientación legal.",
-  brand: "MAJ Asesoría Jurídica",
-  greeting: true
-};
-
-(function () {
-  var wa = document.createElement("script");
-  wa.type = "text/javascript";
-  wa.async = true;
-  wa.src = "https://join.chat/widget.js";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(wa, s);
-})();
-</script>
-
 <body>
 
   <header class="topbar">
@@ -251,6 +230,29 @@ window.WHWidgetOptions = {
 </footer>
 
   <a href="https://wa.me/573102567625" class="whatsapp" target="_green">WhatsApp</a>
+
+  <script>
+window.WHWidgetOptions = {
+  whatsapp: "573102567625",
+  call_to_action: "Hola 👋 ¿En qué podemos ayudarte?",
+  position: "right",
+  button_color: "#25D366",
+  brand: "MAJ Asesoría Jurídica",
+  pre_filled_message: "Hola, vi tu página de MAJ Asesoría Jurídica y me interesa recibir orientación sobre mi caso. ¿Me puedes ayudar?"
+};
+
+(function () {
+  var wa = document.createElement("script");
+  wa.type = "text/javascript";
+  wa.async = true;
+  wa.src = "https://join.chat/widget.js";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(wa, s);
+})();
+</script>
+
+</body>
+</html>
 
 </body>
 </html>
