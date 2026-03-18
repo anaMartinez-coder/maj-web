@@ -19,6 +19,27 @@
   <span class="whatsapp-text">WhatsApp</span>
 </a>
 
+<script>
+  window.WHWidgetOptions = {
+    whatsapp: "573102567625",
+    call_to_action: "Hola 👋 ¿En qué podemos ayudarte?",
+    position: "right",
+    button_color: "#25D366",
+    order: "whatsapp",
+    pre_filled_message: "Hola, vi tu página de MAJ Asesoría Jurídica y quisiera recibir orientación legal.",
+    brand: "MAJ Asesoría Jurídica"
+  };
+
+  (function () {
+    var wa = document.createElement("script");
+    wa.type = "text/javascript";
+    wa.async = true;
+    wa.src = "https://join.chat/widget.js";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(wa, s);
+  })();
+</script>
+
 <body>
 
   <header class="topbar">

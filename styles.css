@@ -1216,3 +1216,16 @@ img {
     display: none;
   }
 }
+
+/* Ajuste del widget WhatsApp en móviles */
+@media (max-width: 768px) {
+  #wh-widget-send-button {
+    bottom: 15px !important;
+    right: 15px !important;
+  }
+
+  .joinchat__chatbox {
+    width: 280px !important;
+    max-width: 90vw !important;
+  }
+}
