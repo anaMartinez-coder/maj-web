@@ -1718,3 +1718,32 @@ img {
     padding: 0;
   }
 }
+
+@media (max-width: 768px) {
+  .wa-widget {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .wa-box {
+    width: 220px;
+    padding: 10px;
+  }
+
+  .wa-bubble {
+    padding: 10px;
+  }
+
+  .wa-bubble strong {
+    font-size: 13px;
+  }
+
+  .wa-bubble p {
+    font-size: 12px;
+  }
+
+  .wa-button {
+    padding: 9px;
+    font-size: 14px;
+  }
+}
