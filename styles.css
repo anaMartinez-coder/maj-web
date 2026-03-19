@@ -1490,90 +1490,220 @@ img {
 
 .hero {
   position: relative;
-  height: 100vh;
+  min-height: 88vh;
   display: flex;
   align-items: center;
-  padding: 0 60px;
-  color: white;
+  padding: 120px 48px 80px;
+  color: #ffffff;
+  overflow: hidden;
 }
 
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.4));
+  background: linear-gradient(
+    to right,
+    rgba(5, 10, 20, 0.82) 0%,
+    rgba(5, 10, 20, 0.68) 38%,
+    rgba(5, 10, 20, 0.50) 62%,
+    rgba(5, 10, 20, 0.62) 100%
+  );
+  z-index: 1;
 }
 
 .hero-content {
   position: relative;
-  max-width: 650px;
   z-index: 2;
+  max-width: 620px;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 12px;
+  font-size: 4rem;
+  line-height: 1.08;
+  margin: 0 0 18px;
 }
 
 .subtitle {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
+  line-height: 1.4;
   color: #d4af37;
-  margin-bottom: 15px;
-  font-weight: 600;
+  margin: 0 0 22px;
+  font-weight: 700;
 }
 
 .description {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 25px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin: 0 0 34px;
+  max-width: 560px;
 }
 
 .hero-buttons {
   display: flex;
-  gap: 12px;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
+.gold-btn,
+.whatsapp-btn,
 .outline-btn {
-  border: 2px solid #d4af37;
-  padding: 10px 18px;
-  border-radius: 6px;
-  color: #d4af37;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+  padding: 13px 22px;
+  border-radius: 8px;
+  font-weight: 700;
   text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
+  transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
 }
 
+.gold-btn:hover,
+.whatsapp-btn:hover,
 .outline-btn:hover {
-  background: #d4af37;
-  color: black;
+  transform: translateY(-2px);
 }
 
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 20px; /* antes estaba muy pegado */
+/* Tablet */
+@media (max-width: 992px) {
+  .hero {
+    min-height: 82vh;
+    padding: 110px 32px 70px;
+  }
+
+  .hero-content {
+    max-width: 540px;
+  }
+
+  .hero h1 {
+    font-size: 3.2rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    font-size: 1.08rem;
+    line-height: 1.7;
+  }
 }
 
-.subtitle {
-  font-size: 1.3rem;
-  color: #d4af37;
-  margin-bottom: 20px; /* más espacio */
-  font-weight: 600;
+/* Celular */
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: 110px 24px 60px;
+    align-items: flex-start;
+  }
+
+  .hero::before {
+    background: linear-gradient(
+      to bottom,
+      rgba(5, 10, 20, 0.78) 0%,
+      rgba(5, 10, 20, 0.72) 40%,
+      rgba(5, 10, 20, 0.70) 100%
+    );
+  }
+
+  .hero-content {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    line-height: 1.12;
+    margin-bottom: 16px;
+  }
+
+  .subtitle {
+    font-size: 1.18rem;
+    line-height: 1.45;
+    margin-bottom: 18px;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-bottom: 28px;
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    gap: 12px;
+  }
+
+  .gold-btn,
+  .whatsapp-btn,
+  .outline-btn {
+    min-width: 140px;
+    padding: 12px 18px;
+    font-size: 0.98rem;
+  }
 }
 
-.description {
-  font-size: 1rem;
-  line-height: 1.7;
-  margin-bottom: 35px; /* aquí está la clave */
-  max-width: 550px; /* evita que se vea muy ancho */
-}
+/* Celular pequeño */
+@media (max-width: 480px) {
+  .hero {
+    padding: 100px 20px 52px;
+  }
 
-.hero-buttons {
-  display: flex;
-  gap: 18px; /* separa los botones */
-  margin-top: 10px;
-}
+  .hero h1 {
+    font-size: 2.15rem;
+  }
 
-.hero-content {
-  margin-top: 40px;
-}
+  .subtitle {
+    font-size: 1.05rem;
+  }
 
+  .description {
+    font-size: 0.97rem;
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .gold-btn,
+  .whatsapp-btn,
+  .outline-btn {
+    min-width: 132px;
+    padding: 11px 16px;
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 768px) {
+  .wa-widget {
+    right: 12px;
+    bottom: 12px;
+    max-width: 220px;
+    width: calc(100vw - 24px);
+  }
+
+  .wa-box {
+    padding: 12px 10px 10px;
+    border-radius: 18px;
+  }
+
+  .wa-bubble {
+    padding: 12px 14px;
+  }
+
+  .wa-bubble strong {
+    font-size: 14px;
+  }
+
+  .wa-bubble p {
+    font-size: 12px;
+  }
+
+  .wa-button {
+    min-width: 120px;
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+}
