@@ -1547,3 +1547,28 @@ img {
   background: #d4af37;
   color: black;
 }
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px; /* antes estaba muy pegado */
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #d4af37;
+  margin-bottom: 20px; /* más espacio */
+  font-weight: 600;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 35px; /* aquí está la clave */
+  max-width: 550px; /* evita que se vea muy ancho */
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 18px; /* separa los botones */
+  margin-top: 10px;
+}
