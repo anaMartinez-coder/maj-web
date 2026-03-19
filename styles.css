@@ -2005,3 +2005,7 @@ a.outline-btn:hover {
 .footer {
   padding-bottom: 80px; /* crea espacio para que no se encimen */
 }
+
+.servicios {
+  margin-right: 40px; /* 👈 lo corre hacia la izquierda */
+}
