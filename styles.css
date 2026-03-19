@@ -1572,3 +1572,7 @@ img {
   gap: 18px; /* separa los botones */
   margin-top: 10px;
 }
+
+.hero-content {
+  margin-top: 40px;
+}
