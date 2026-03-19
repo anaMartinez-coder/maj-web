@@ -1970,31 +1970,16 @@ a.outline-btn:hover {
   margin-bottom: 12px;
   border-radius: 2px;
 }
-.cards-container {
+
+.card .icon {
   display: flex;
-  gap: 25px;
-  margin-top: 25px;
-  flex-wrap: wrap;
-}
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 12px;
 
-.card {
-  background: #fff;
-  padding: 25px;
-  border-radius: 14px;
-  width: 280px;
-
-  border: 1px solid rgba(0,0,0,0.08);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.06);
-
-  transition: 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
-}
-
-.icon {
-  font-size: 24px;
-  margin-bottom: 10px;
+  background: rgba(200,155,60,0.1);
+  border-radius: 50%;
+  font-size: 22px;
 }
