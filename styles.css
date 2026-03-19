@@ -2185,30 +2185,25 @@ a.outline-btn:hover {
   background: red;
   box-shadow: none;
 }
-.sparkles i {
+.sparkles {
   position: absolute;
-  width: 4px;   /* más pequeño = más fino */
-  height: 4px;
-  display: block;
-  border-radius: 50%;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
 
-  /* dorado elegante */
-  background: rgba(212, 175, 55, 0.9);
+  background-image: 
+    radial-gradient(circle, rgba(212,175,55,0.7) 1px, transparent 1px),
+    radial-gradient(circle, rgba(255,255,255,0.4) 1px, transparent 1px);
 
-  /* brillo suave */
-  box-shadow: 
-    0 0 6px rgba(212, 175, 55, 0.8),
-    0 0 12px rgba(212, 175, 55, 0.4);
-
-  animation: twinkle 4s infinite ease-in-out;
+  background-size: 80px 80px, 120px 120px;
+  animation: sparkleMove 20s linear infinite;
+  opacity: 0.6;
 }
-@keyframes twinkle {
-  0%, 100% {
-    opacity: 0.2;
-    transform: scale(0.7);
+@keyframes sparkleMove {
+  from {
+    background-position: 0 0, 0 0;
   }
-  50% {
-    opacity: 0.8;
-    transform: scale(1.2);
+  to {
+    background-position: 0 200px, 0 300px;
   }
 }
