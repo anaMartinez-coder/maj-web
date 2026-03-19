@@ -1935,3 +1935,38 @@ a.outline-btn:hover {
   background: #c89b3c;
   margin-top: 6px;
 }
+
+.cards-container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  width: 280px;
+
+  /* 🔥 ESTO ES LA CLAVE (división visible) */
+  border: 1px solid rgba(0,0,0,0.08);
+
+  /* sombra suave elegante */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+.card::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #c89b3c;
+  margin-bottom: 12px;
+  border-radius: 2px;
+}
