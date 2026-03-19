@@ -2009,10 +2009,11 @@ a.outline-btn:hover {
 .servicios {
   margin-right: 40px; /* 👈 lo corre hacia la izquierda */
 }
-.servicios {
-  transform: translateX(-30px);
-}
+
 
 .servicios {
   transform: translateX(-40px) !important;
+}
+.footer-container .footer-col:nth-child(3) {
+  transform: translateX(-40px);
 }
