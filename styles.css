@@ -2049,3 +2049,8 @@ a.outline-btn:hover {
     transform: none;
   }
 }
+@media (max-width: 768px) {
+  .footer-container .footer-col {
+    margin-bottom: 20px;
+  }
+}
