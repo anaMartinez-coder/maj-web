@@ -1866,3 +1866,27 @@ a.outline-btn:hover {
   background: #d4a63a !important;
   color: #081a3a !important;
 }
+@media (max-width: 768px) {
+  .wa-bubble {
+    display: none;
+  }
+
+  .wa-box {
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .wa-widget {
+    right: 12px;
+    bottom: 12px;
+    width: auto;
+    max-width: none;
+  }
+
+  .wa-button {
+    min-width: 120px;
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+}
