@@ -2218,3 +2218,17 @@ a.outline-btn:hover {
 .gold-btn:hover {
   box-shadow: 0 0 12px rgba(212,175,55,0.6);
 }
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #c89b3c;
+  margin-top: 8px;
+}
+
+.hero h1 {
+  text-shadow: 0 0 10px rgba(212,175,55,0.3);
+}
+
