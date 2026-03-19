@@ -1747,3 +1747,31 @@ img {
     font-size: 14px;
   }
 }
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 145px;
+  padding: 12px 22px;
+  border: 2px solid #d4a63a;
+  border-radius: 8px;
+  background: transparent;
+  color: #d4a63a;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1;
+  transition: all 0.25s ease;
+  box-sizing: border-box;
+}
+
+.whatsapp-btn:hover {
+  background: #d4a63a;
+  color: #081a3a;
+  transform: translateY(-2px);
+}
+
+.whatsapp-btn:active {
+  transform: translateY(0);
+}
