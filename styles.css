@@ -2017,3 +2017,6 @@ a.outline-btn:hover {
 .footer-container .footer-col:nth-child(3) {
   transform: translateX(-40px);
 }
+.footer-container .footer-col:nth-child(3) {
+  transform: translateX(-40px) !important;
+}
