@@ -1890,10 +1890,3 @@ a.outline-btn:hover {
     font-size: 14px;
   }
 }
-.service-note {
-  display: block;
-  margin-top: 10px;
-  font-size: 0.8rem;
-  color: #9ca3af;
-  font-style: italic;
-}
