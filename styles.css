@@ -2207,3 +2207,11 @@ a.outline-btn:hover {
     background-position: 0 200px, 0 300px;
   }
 }
+
+@media (max-width: 768px) {
+  .sparkles {
+    background-size: 40px 40px, 60px 60px; /* más densidad */
+    opacity: 0.7; /* un poquito más visible */
+    animation: sparkleMove 12s linear infinite; /* más movimiento */
+  }
+}
