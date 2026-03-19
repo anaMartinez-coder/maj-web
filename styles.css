@@ -1792,3 +1792,28 @@ img {
   box-shadow: 0 0 12px rgba(212,166,58,0.6);
   background: rgba(212,166,58,0.1);
 }
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 22px;
+  border: 2px solid #d4a63a; /* borde dorado */
+  border-radius: 8px;
+  background: transparent; /* fondo transparente */
+  color: #d4a63a; /* texto dorado */
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+}
+
+/* Hover elegante */
+.whatsapp-btn:hover {
+  background: #d4a63a; /* se llena dorado */
+  color: #081a3a; /* texto oscuro */
+  transform: translateY(-2px);
+}
+.whatsapp-btn {
+  color: #d4a63a !important;
+  border: 2px solid #d4a63a !important;
+}
