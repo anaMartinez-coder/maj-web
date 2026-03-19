@@ -2215,3 +2215,6 @@ a.outline-btn:hover {
     animation: sparkleMove 12s linear infinite; /* más movimiento */
   }
 }
+.gold-btn:hover {
+  box-shadow: 0 0 12px rgba(212,175,55,0.6);
+}
