@@ -1775,3 +1775,20 @@ img {
 .whatsapp-btn:active {
   transform: translateY(0);
 }
+.whatsapp-btn {
+  display: inline-flex;
+  padding: 12px 22px;
+  border: 1px solid #d4a63a;
+  color: #d4a63a;
+  background: transparent;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 6px;
+  box-shadow: 0 0 0px transparent;
+  transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+  box-shadow: 0 0 12px rgba(212,166,58,0.6);
+  background: rgba(212,166,58,0.1);
+}
