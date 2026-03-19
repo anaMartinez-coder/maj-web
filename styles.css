@@ -2180,9 +2180,9 @@ a.outline-btn:hover {
 }
 
 .sparkles i {
-  width: 20px;
-  height: 20px;
-  background: red;
+  width: 1px;
+  height: 1px;
+  background: rgb(240, 130, 181);
   box-shadow: none;
 }
 .sparkles {
