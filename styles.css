@@ -1707,3 +1707,14 @@ img {
     font-size: 14px;
   }
 }
+@media (max-width: 768px) {
+  .wa-bubble {
+    display: none;
+  }
+
+  .wa-box {
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+  }
+}
