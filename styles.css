@@ -2034,3 +2034,18 @@ a.outline-btn:hover {
     transform: none;
   }
 }
+/* SOLO escritorio */
+.footer-container .footer-col:nth-child(3) {
+  transform: translateX(-50px);
+}
+
+/* SOLO móvil */
+@media (max-width: 768px) {
+  .footer-container {
+    text-align: center;
+  }
+
+  .footer-container .footer-col:nth-child(3) {
+    transform: none;
+  }
+}
