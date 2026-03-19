@@ -1817,3 +1817,31 @@ img {
   color: #d4a63a !important;
   border: 2px solid #d4a63a !important;
 }
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 22px;
+  border: 2px solid #d4a63a;
+  border-radius: 8px;
+  background: transparent;
+  color: #d4a63a !important; /* 🔥 fuerza dorado */
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+}
+
+/* IMPORTANTE: quitar morado de links */
+.whatsapp-btn:visited,
+.whatsapp-btn:link,
+.whatsapp-btn:active {
+  color: #d4a63a !important;
+}
+
+/* Hover elegante */
+.whatsapp-btn:hover {
+  background: #d4a63a;
+  color: #081a3a !important;
+  transform: translateY(-2px);
+}
