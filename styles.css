@@ -1845,3 +1845,24 @@ img {
   color: #081a3a !important;
   transform: translateY(-2px);
 }
+a.outline-btn,
+a.outline-btn:link,
+a.outline-btn:visited,
+a.outline-btn:active {
+  color: #d4a63a !important;
+  border: 2px solid #d4a63a !important;
+  background: transparent !important;
+  text-decoration: none !important;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 12px 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover elegante */
+a.outline-btn:hover {
+  background: #d4a63a !important;
+  color: #081a3a !important;
+}
