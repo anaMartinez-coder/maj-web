@@ -2020,3 +2020,17 @@ a.outline-btn:hover {
 .footer-container .footer-col:nth-child(3) {
   transform: translateX(-97px) !important;
 }
+.footer-container .footer-col:nth-child(3) {
+  transform: translateX(-97px);
+}
+
+@media (max-width: 768px) {
+  .footer-container .footer-col:nth-child(3) {
+    transform: translateX(0);
+  }
+}
+@media (max-width: 768px) {
+  .footer-container .footer-col:nth-child(3) {
+    transform: none;
+  }
+}
