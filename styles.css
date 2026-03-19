@@ -1983,3 +1983,25 @@ a.outline-btn:hover {
   border-radius: 50%;
   font-size: 22px;
 }
+.card {
+  position: relative;
+  padding-left: 55px; /* espacio para que el texto no se monte */
+}
+
+.card .icon {
+  position: absolute;
+  left: 15px;
+  top: 20px; /* ajusta si lo quieres más arriba o centrado */
+  font-size: 22px;
+  opacity: 0.8;
+}
+.whatsapp-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 999;
+}
+
+.footer {
+  padding-bottom: 80px; /* crea espacio para que no se encimen */
+}
