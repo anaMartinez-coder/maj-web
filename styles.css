@@ -2147,13 +2147,20 @@ a.outline-btn:hover {
 
 .sparkles i {
   position: absolute;
-  width: 8px;
-  height: 8px;
+  width: 4px;   /* más pequeño = más fino */
+  height: 4px;
   display: block;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.85);
-  box-shadow: 0 0 12px rgba(212, 175, 55, 0.8);
-  animation: twinkle 3s infinite ease-in-out;
+
+  /* dorado elegante */
+  background: rgba(212, 175, 55, 0.9);
+
+  /* brillo suave */
+  box-shadow: 
+    0 0 6px rgba(212, 175, 55, 0.8),
+    0 0 12px rgba(212, 175, 55, 0.4);
+
+  animation: twinkle 4s infinite ease-in-out;
 }
 
 .hero-content {
@@ -2169,5 +2176,39 @@ a.outline-btn:hover {
   50% {
     opacity: 1;
     transform: scale(1.4);
+  }
+}
+
+.sparkles i {
+  width: 20px;
+  height: 20px;
+  background: red;
+  box-shadow: none;
+}
+.sparkles i {
+  position: absolute;
+  width: 4px;   /* más pequeño = más fino */
+  height: 4px;
+  display: block;
+  border-radius: 50%;
+
+  /* dorado elegante */
+  background: rgba(212, 175, 55, 0.9);
+
+  /* brillo suave */
+  box-shadow: 
+    0 0 6px rgba(212, 175, 55, 0.8),
+    0 0 12px rgba(212, 175, 55, 0.4);
+
+  animation: twinkle 4s infinite ease-in-out;
+}
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(0.7);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.2);
   }
 }
