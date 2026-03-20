@@ -2259,3 +2259,16 @@ h2::after {
 .logo-img {
   cursor: pointer;
 }
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #f9fafb;
+  line-height: 1.2;
+}
+
+.hero-title span {
+  color: #c8a96b;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
