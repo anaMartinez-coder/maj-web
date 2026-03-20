@@ -2232,3 +2232,17 @@ h2::after {
   text-shadow: 0 0 10px rgba(212,175,55,0.3);
 }
 
+.logo img {
+  height: 45px;
+  object-fit: contain;
+}
+.logo-img {
+  height: 45px;
+  object-fit: contain;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
