@@ -2246,3 +2246,11 @@ h2::after {
   align-items: center;
   gap: 10px;
 }
+.logo-img {
+  height: 65px;
+  object-fit: contain;
+}
+.logo-img:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
