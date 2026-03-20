@@ -2521,3 +2521,49 @@ h2::after {
   margin-bottom: 12px;
   font-size: 1rem;
 }
+.page-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr;
+  gap: 35px;
+  align-items: center;
+}
+
+.page-image img {
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.10);
+}
+
+.page-text p {
+  margin-bottom: 18px;
+}
+
+@media (max-width: 900px) {
+  .page-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.page-extra {
+  padding: 0 20px 80px;
+}
+
+.page-extra-box {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+}
+
+.page-extra-box h2 {
+  font-family: 'Playfair Display', serif;
+  color: #142b4d;
+  margin-bottom: 16px;
+}
+
+.page-extra-box p {
+  color: #374151;
+  line-height: 1.8;
+}
