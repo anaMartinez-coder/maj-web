@@ -2567,3 +2567,25 @@ h2::after {
   color: #374151;
   line-height: 1.8;
 }
+.page-trust {
+  padding: 0 20px 80px;
+}
+
+.page-trust-box {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #f9fafb;
+  padding: 40px 50px;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+}
+
+.page-trust-box h2 {
+  font-family: 'Playfair Display', serif;
+  color: #142b4d;
+  margin-bottom: 20px;
+}
+
+.page-trust-box li {
+  margin-bottom: 12px;
+}
