@@ -2858,3 +2858,18 @@ h2::after {
   transform: translateY(-8px);
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
 }
+.case-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.case-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 22px;
+  right: 22px;
+  height: 4px;
+  background: #c9a646;
+  border-radius: 0 0 8px 8px;
+}
