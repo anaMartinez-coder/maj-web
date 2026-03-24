@@ -2702,3 +2702,7 @@ h2::after {
 .case-item:hover {
   transform: translateY(-5px);
 }
+.blog-section {
+  padding: 60px 20px;
+  background: #f8f8f8;
+}
