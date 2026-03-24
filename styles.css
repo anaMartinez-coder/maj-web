@@ -2722,3 +2722,89 @@ h2::after {
   padding: 20px;
   border-radius: 10px;
 }
+.topbar {
+  position: relative;
+  z-index: 1000;
+}
+
+.page-hero {
+  padding: 140px 20px 80px;
+  text-align: center;
+  background: linear-gradient(rgba(8, 29, 66, 0.85), rgba(8, 29, 66, 0.85)),
+    url("img/hero.jpg") center/cover no-repeat;
+  color: white;
+}
+
+.page-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.page-hero p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 60px auto 0;
+  padding: 0 20px;
+}
+
+.page-box {
+  background: #fff;
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.page-image img {
+  width: 100%;
+  border-radius: 18px;
+  display: block;
+}
+
+.page-extra {
+  max-width: 1200px;
+  margin: 40px auto 80px;
+  padding: 0 20px;
+}
+
+.page-extra-box {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 120px 20px 60px;
+  }
+
+  .page-hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .page-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-box,
+  .page-extra-box {
+    padding: 28px;
+  }
+}
