@@ -2878,3 +2878,65 @@ h2::after {
   color: inherit;
   display: block;
 }
+.tech-section {
+  position: relative;
+  background: #071b44;
+  padding: 80px 8%;
+  overflow: hidden;
+}
+
+.tech-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(4, 15, 40, 0.45);
+  z-index: 1;
+}
+
+.tech-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.tech-text {
+  flex: 1;
+  max-width: 520px;
+}
+
+.tech-text h2 {
+  font-size: 3rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.tech-text ul {
+  margin: 20px 0 30px;
+  padding-left: 22px;
+}
+
+.tech-text li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.tech-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.38);
+  object-fit: cover;
+  display: block;
+}
